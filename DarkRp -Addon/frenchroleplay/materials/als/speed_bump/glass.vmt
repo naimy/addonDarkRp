@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "als/speed_bump/glass"
+	"$selfillum"	"1"
+}

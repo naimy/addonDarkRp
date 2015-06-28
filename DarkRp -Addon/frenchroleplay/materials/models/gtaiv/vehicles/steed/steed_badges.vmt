@@ -1,0 +1,6 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/gtaiv/vehicles/steed/steed_badges"
+	"$decal" "1"
+	"$translucent" "1"
+}

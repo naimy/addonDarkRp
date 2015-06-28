@@ -1,0 +1,14 @@
+"LightMappedGeneric"
+{
+"$baseTexture" "canadianbill/rplocality_largecredits"
+"$surfaceprop" "Default"
+"Proxies" 
+{ 
+"AnimatedTexture" 
+{ 
+"animatedTextureVar" "$basetexture" 
+"animatedTextureFrameNumVar" "$frame" 
+"animatedTextureFrameRate" "0.2" 
+}
+} 
+}

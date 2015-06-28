@@ -1,0 +1,10 @@
+"vertexlitGeneric"
+{
+	"$basetexture" "models/gtaiv/vehicles/steed/steed_signs3"
+	
+	"$halflambert" 1
+	"$nodecal" "1"
+	"$model" "1"
+
+
+}
