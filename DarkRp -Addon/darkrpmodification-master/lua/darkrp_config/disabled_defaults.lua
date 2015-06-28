@@ -45,16 +45,16 @@ e.g. you disable the gundealer and you make a new job as TEAM_GUN. If you want t
 work for your custom job, remake them to include your job as well.
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["jobs"] = {
-	["chief"]     = false,
-	["citizen"]   = false,
+	["chief"]     = true,
+	["citizen"]   = true,
 	["cook"]      = false, --Hungermod only
 	["cp"]        = true,
-	["gangster"]  = false,
-	["gundealer"] = false,
-	["hobo"]      = false,
-	["mayor"]     = false,
-	["medic"]     = false,
-	["mobboss"]   = false,
+	["gangster"]  = true,
+	["gundealer"] = true,
+	["hobo"]      = true,
+	["mayor"]     = true,
+	["medic"]     = true,
+	["mobboss"]   = true,
 }
 
 --[[---------------------------------------------------------------------------

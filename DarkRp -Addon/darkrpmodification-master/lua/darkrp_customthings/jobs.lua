@@ -18,7 +18,7 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
 
-TEAM_POLICE = DarkRP.createJob("Civil Protection", {
+TEAM_Civil = DarkRP.createJob("Civil", {
 	color = Color(25, 25, 170, 255),
 	model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
 	description = [[The protector of every citizen that lives in the city.
