@@ -286,7 +286,7 @@ GM.Config.F1MenuHelpPageTitle = "Wiki page"
 
 -- Put Steam ID's and ranks in this list, and the players will have that rank when they join.
 GM.Config.DefaultPlayerGroups = {
-	["STEAM_0:0:00000000"] = "superadmin",
+	["STEAM_0:1:30023357"] = "superadmin",
 	["STEAM_0:0:11111111"] = "admin",
 }
 
