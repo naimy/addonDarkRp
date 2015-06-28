@@ -18,33 +18,70 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
 
-TEAM_Civil = DarkRP.createJob("Civil", {
-	color = Color(25, 25, 170, 255),
-	model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
-	description = [[The protector of every citizen that lives in the city.
-		You have the power to arrest criminals and protect innocents.
-		Hit a player with your arrest baton to put them in jail.
-		Bash a player with a stunstick and they may learn to obey the law.
-		The Battering Ram can break down the door of a criminal, with a warrant for their arrest.
-		The Battering Ram can also unfreeze frozen props (if enabled).
-		Type /wanted <name> to alert the public to the presence of a criminal.]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "stunstick", "door_ram", "weaponchecker"},
-	command = "cp",
-	max = 4,
-	salary = GAMEMODE.Config.normalsalary * 1.45,
-	admin = 0,
-	vote = true,
-	hasLicense = true,
-	ammo = {
-		["pistol"] = 60,
+TEAM_CIVILS = DarkRP.createJob("Civil", {
+	color = Color(20, 150, 20, 255),
+	model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
 	},
-	category = "Civil Protection",
+	description = [[Le Citizen est le niveau le plus fondamental de la société , vous pouvez tenir en plus d'être un clochard . Vous avez pas de rôle spécifique dans la vie de la ville.]],
+	weapons = {},
+	command = "civil",
+	max = 0,
+	salary = GAMEMODE.Config.normalsalary,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Civils",
+})
+
+TEAM_COMMERCIALS = DarkRP.createJob("Vendeur de voiture de luxe", {
+	color = Color(20, 150, 20, 255),
+	model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
+	},
+	description = [[Vous êtes vendeur de voiture de luxe.]],
+	weapons = {},
+	command = "VendeurLuxe",
+	max = 0,
+	salary = GAMEMODE.Config.normalsalary,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Commercials",
 })
 
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
-GAMEMODE.DefaultTeam = TEAM_CITIZEN
+GAMEMODE.DefaultTeam = TEAM_CIVIL
 
 
 --[[---------------------------------------------------------------------------
