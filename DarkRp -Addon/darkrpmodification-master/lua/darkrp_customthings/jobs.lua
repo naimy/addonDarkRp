@@ -34,9 +34,9 @@ TEAM_CIVILS = DarkRP.createJob("Civil", {
 		"models/player/Group01/Male_06.mdl",
 		"models/player/Group01/Male_07.mdl",
 		"models/player/Group01/Male_08.mdl",
-		"models/player/Group01/Male_09.mdl"
+		"models/player/Group01/Male_09.mdl",
 	},
-	description = [[Le Citizen est le niveau le plus fondamental de la société , vous pouvez tenir en plus d'être un clochard . Vous avez pas de rôle spécifique dans la vie de la ville.]],
+	description = [[Le Citizen est le niveau le plus fondamental de la sociï¿½tï¿½ , vous pouvez tenir en plus d'ï¿½tre un clochard . Vous avez pas de rï¿½le spï¿½cifique dans la vie de la ville.]],
 	weapons = {},
 	command = "civil",
 	max = 0,
@@ -48,8 +48,8 @@ TEAM_CIVILS = DarkRP.createJob("Civil", {
 	category = "Civils",
 })
 
-TEAM_COMMERCIALS = DarkRP.createJob("Vendeur de voiture de luxe", {
-	color = Color(20, 150, 20, 255),
+TEAM_MARCHANDS = DarkRP.createJob("Marchands d'armes", {
+	color = Color(255, 140, 0, 255),
 	model = {
 		"models/player/Group01/Female_01.mdl",
 		"models/player/Group01/Female_02.mdl",
@@ -64,24 +64,93 @@ TEAM_COMMERCIALS = DarkRP.createJob("Vendeur de voiture de luxe", {
 		"models/player/Group01/Male_06.mdl",
 		"models/player/Group01/Male_07.mdl",
 		"models/player/Group01/Male_08.mdl",
-		"models/player/Group01/Male_09.mdl"
+		"models/player/Group01/Male_09.mdl",
 	},
-	description = [[Vous êtes vendeur de voiture de luxe.]],
+	description = [[A Gun Dealer is the only person who can sell guns to other people.
+		Make sure you aren't caught selling illegal firearms to the public! You might get arrested!]],
 	weapons = {},
-	command = "VendeurLuxe",
-	max = 0,
+	command = "gundealer",
+	max = 2,
 	salary = GAMEMODE.Config.normalsalary,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
-	candemote = false,
-	category = "Commercials",
+	category = "Marchands",
+	sortOrder = 100,
 })
+
+TEAM_POLICE = DarkRP.createJob("Policier", {
+   color = Color(0, 71, 255, 255),
+   model = {
+		"models/player/nypd/male_02.mdl",
+		"models/player/nypd/male_04.mdl",
+		"models/player/nypd/male_05.mdl",
+		"models/player/nypd/male_06.mdl",
+		"models/player/nypd/male_07.mdl",
+		"models/player/nypd/male_08.mdl",
+		"models/player/nypd/male_09.mdl",
+		},
+   description = [[Policer, vous devez faire appliquer la lois]],
+   weapons = {"arrest_stick", "unarrest_stick", "weapon_deagle2", "stunstick", "door_ram", "weaponchecker"},
+   command = "Policier",
+   max = 5,
+   salary = GAMEMODE.Config.normalsalary*3,
+   admin = 0,
+   vote = true,
+   hasLicense = true,
+   candemote = true,
+   -- CustomCheck
+   medic = false,
+   chief = false,
+   mayor = false,
+   hobo = false,
+   cook = false,
+   category = "Police",
+})
+
+TEAM_POLICE = DarkRP.createJob("EnquÃªteur judiciaire", {
+   color = Color(0, 71, 255, 255),
+   model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
+   },
+   description = [[RattachÃ© Ã  la police, Vous devez enquÃªter sur les crimes.]],
+   weapons = {"arrest_stick", "unarrest_stick", "weapon_deagle2", "stunstick", "door_ram", "weaponchecker"},
+   command = "EnquÃªteur judiciaire",
+   max = 5,
+   salary = GAMEMODE.Config.normalsalary*3,
+   admin = 0,
+   vote = true,
+   hasLicense = true,
+   candemote = true,
+   -- CustomCheck
+   medic = false,
+   chief = false,
+   mayor = false,
+   hobo = false,
+   cook = false,
+   category = "Police",
+   CustomCheck = function(ply) return ply:GetNWString("usergroup") == "Donator" end,
+   CustomCheckFailMsg = "This job is donator only."
+})
+
 
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
-GAMEMODE.DefaultTeam = TEAM_CIVIL
+GAMEMODE.DefaultTeam = TEAM_CIVILS
 
 
 --[[---------------------------------------------------------------------------

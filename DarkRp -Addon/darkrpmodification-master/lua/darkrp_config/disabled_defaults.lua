@@ -77,9 +77,9 @@ DarkRP.disabledDefaults["shipments"] = {
 Entities
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["entities"] = {
-	["Drug lab"]      = false,
-	["Gun lab"]       = false,
-	["Money printer"] = false,
+	["Drug lab"]      = true,
+	["Gun lab"]       = true,
+	["Money printer"] = true,
 	["Microwave"]     = false, --Hungermod only
 }
 
