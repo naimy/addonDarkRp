@@ -1,7 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "als/speed_bump/black"
-	"$envmap"	"env_cubemap"
-	"$envmaptint"	"[ .1 .1 .1 ]"
-
-}

@@ -1,7 +1,0 @@
-"VertexLitGeneric"
-{
-	"$basetexture" "models/crack_machine/keypad_new"
-	"$surfaceprop" "metal"
-	"$model" 1
-}
-

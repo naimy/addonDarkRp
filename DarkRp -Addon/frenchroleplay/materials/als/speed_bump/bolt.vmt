@@ -1,6 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "als/speed_bump/bolt"
-	"$normalmap"	"als/speed_bump/bolt_bump"
-
-}

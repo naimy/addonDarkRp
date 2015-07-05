@@ -1,6 +1,0 @@
-"VertexLitGeneric"
-{
-	// Original shader: VertexLitTexture
-	"$basetexture" "models/redninja/players/female/kanisha_cylmap"
-	"$halflambert" 1
-}
