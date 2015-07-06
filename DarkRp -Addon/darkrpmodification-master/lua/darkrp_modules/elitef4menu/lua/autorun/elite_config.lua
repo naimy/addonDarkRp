@@ -1,13 +1,13 @@
 ELITE = {}
 
 ELITE.StaffListRanks = { "superadmin", "admin" } -- What ULX ranks to show on the "Staff Online" list.
-ELITE.ShowFoodTab = true -- Make sure Hungermod is enabled, otherwise this will give you errors!
+ELITE.ShowFoodTab = false -- Make sure Hungermod is enabled, otherwise this will give you errors!
 
 ELITE.VIPJobCheckbox = true -- Whether or not to show the "Show VIP Jobs" checkbox on the jobs tab. (The checkbox is based on the jobs that have a customCheck)
 
 ELITE.OpenWebsiteInOverlay = false -- If this is true, the website will open in Steam overlay, if false, it will open in the F4 menu.
 
-ELITE.WebsiteURL = "http://valsnet.co/" -- Website that opens when clicking the "Website" button, make sure you include "http://"!
+ELITE.WebsiteURL = "http://youwannaplay.com" -- Website that opens when clicking the "Website" button, make sure you include "http://"!
 
 timer.Simple( 1, function() -- Don't screw with this timer, but you may change the tables inside.
     ELITE.AccessToCPCmds = { TEAM_POLICE, TEAM_CHIEF }
