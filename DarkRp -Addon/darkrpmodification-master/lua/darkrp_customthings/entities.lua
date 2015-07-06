@@ -16,15 +16,3 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomEntityFields
 
 Add entities under the following line:
 ---------------------------------------------------------------------------]]
-
-DarkRP.createShipment("Sniper rifle", {
-	model = "models/weapons/w_snip_g3sg1.mdl",
-	entity = "ls_sniper",
-	price = 3750,
-	amount = 10,
-	separate = false,
-	pricesep = nil,
-	noship = false,
-	allowed = {TEAM_POLICE},
-	category = "",
-})

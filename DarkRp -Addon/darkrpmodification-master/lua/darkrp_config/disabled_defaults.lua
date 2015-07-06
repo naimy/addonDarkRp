@@ -45,16 +45,16 @@ e.g. you disable the gundealer and you make a new job as TEAM_GUN. If you want t
 work for your custom job, remake them to include your job as well.
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["jobs"] = {
-	["chief"]     = true,
-	["citizen"]   = true,
+	["chief"]     = false,
+	["citizen"]   = false,
 	["cook"]      = false, --Hungermod only
-	["cp"]        = true,
-	["gangster"]  = true,
-	["gundealer"] = true,
-	["hobo"]      = true,
-	["mayor"]     = true,
-	["medic"]     = true,
-	["mobboss"]   = true,
+	["cp"]        = false,
+	["gangster"]  = false,
+	["gundealer"] = false,
+	["hobo"]      = false,
+	["mayor"]     = false,
+	["medic"]     = false,
+	["mobboss"]   = false,
 }
 
 --[[---------------------------------------------------------------------------
@@ -77,9 +77,9 @@ DarkRP.disabledDefaults["shipments"] = {
 Entities
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["entities"] = {
-	["Drug lab"]      = true,
-	["Gun lab"]       = true,
-	["Money printer"] = true,
+	["Drug lab"]      = false,
+	["Gun lab"]       = false,
+	["Money printer"] = false,
 	["Microwave"]     = false, --Hungermod only
 }
 
