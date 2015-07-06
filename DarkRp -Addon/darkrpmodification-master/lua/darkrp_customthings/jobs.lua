@@ -36,7 +36,7 @@ TEAM_CIVILS = DarkRP.createJob("Civil", {
 		"models/player/Group01/Male_08.mdl",
 		"models/player/Group01/Male_09.mdl",
 	},
-	description = [[Le Citizen est le niveau le plus fondamental de la soci�t� , vous pouvez tenir en plus d'�tre un clochard . Vous avez pas de r�le sp�cifique dans la vie de la ville.]],
+	description = [[Le Citoyen n'est autre qu'une personne basique.]],
 	weapons = {},
 	command = "civil",
 	max = 0,
@@ -48,7 +48,7 @@ TEAM_CIVILS = DarkRP.createJob("Civil", {
 	category = "Civils",
 })
 
-TEAM_MARCHANDS = DarkRP.createJob("Marchands d'armes", {
+TEAM_MARCHANDS = DarkRP.createJob("Marchand d'armes", {
 	color = Color(255, 140, 0, 255),
 	model = {
 		"models/player/Group01/Female_01.mdl",
@@ -66,8 +66,7 @@ TEAM_MARCHANDS = DarkRP.createJob("Marchands d'armes", {
 		"models/player/Group01/Male_08.mdl",
 		"models/player/Group01/Male_09.mdl",
 	},
-	description = [[A Gun Dealer is the only person who can sell guns to other people.
-		Make sure you aren't caught selling illegal firearms to the public! You might get arrested!]],
+	description = [[Le Marchand d'armes vend des armes aux habitants de la ville.]],
 	weapons = {},
 	command = "gundealer",
 	max = 2,
